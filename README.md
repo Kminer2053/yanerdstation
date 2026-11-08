@@ -2,7 +2,7 @@
 
 역의 모습이 바뀌면, 지도를 쓰는 사람도 그 변화를 제보할 수 있습니다. 야!너두 스테이션은 브이월드 실내 3D 지도에 현장 사진과 시설·보행 정보를 겹쳐 보여 줍니다. 서울역에서는 이 지도로 길을 찾고, 상권을 살피고, 운영 상황을 검토합니다.
 
-![서울역 길찾기부터 대전역 제보 반영까지 · 시연영상](./demo/yanerdstation-demo-720p.mp4)
+https://github.com/user-attachments/assets/6132e697-503f-4393-9074-0204130b4b73
 
 [시연영상 MP4 · 4분 58초 · 720p · 9.6 MB](./demo/yanerdstation-demo-720p.mp4) · [영상 미리보기 이미지](./demo/poster.jpg)
 
