@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="520" viewBox="0 0 640 520">
+  <defs><linearGradient id="can"><stop stop-color="#074c3d"/><stop offset=".43" stop-color="#237f62"/><stop offset="1" stop-color="#073f35"/></linearGradient><radialGradient id="egg" cx=".34" cy=".25"><stop stop-color="#b77748"/><stop offset=".55" stop-color="#9b5935"/><stop offset="1" stop-color="#6c3928"/></radialGradient><linearGradient id="paper"><stop stop-color="#eadbc0"/><stop offset="1" stop-color="#cbb58e"/></linearGradient></defs>
+  <ellipse cx="323" cy="465" rx="260" ry="25" fill="#1b3d34" opacity=".13"/>
+  <g transform="translate(229 52) rotate(5 176 160)" font-family="Apple SD Gothic Neo,Noto Sans KR,Arial,sans-serif">
+    <rect x="-8" y="-8" width="365" height="330" rx="24" fill="#dce7df" fill-opacity=".55" stroke="#acbdb5" stroke-width="3"/>
+    <rect width="349" height="308" rx="10" fill="url(#paper)"/>
+    <path d="M3 296h342v23H3Z" fill="#bfa67c"/>
+    <text x="325" y="37" text-anchor="end" font-size="23" fill="#b26349" font-weight="900">Storyway</text>
+    <rect x="20" y="19" width="39" height="47" rx="4" fill="#bc6145"/><text x="40" y="52" text-anchor="middle" fill="#f6ebd8" font-family="Georgia,serif" font-size="33" font-weight="bold">S</text>
+    <text x="179" y="98" text-anchor="middle" fill="#685b40" font-size="13" letter-spacing="1">기억나는 우리의 추억</text>
+    <text x="56" y="157" font-size="48" font-weight="900" fill="#4d2b21">구운란</text><text x="202" y="157" font-size="48" font-weight="900" fill="#b2762f">사이</text>
+    <text x="177" y="189" text-anchor="middle" font-size="13" font-weight="700" fill="#615239">구운계란 2개 · 사이다 190mL</text>
+    <path d="M29 252h289v29H29Z" fill="none" stroke="#8a7654"/><text x="39" y="272" font-size="12" fill="#625039">소비기한</text>
+  </g>
+  <g transform="translate(61 158)"><rect width="135" height="270" rx="18" fill="url(#can)" stroke="#62897b" stroke-width="2"/><ellipse cx="67" cy="10" rx="67" ry="13" fill="#b7c7c0"/><ellipse cx="67" cy="8" rx="57" ry="8" fill="#748e84"/><ellipse cx="77" cy="8" rx="13" ry="4" fill="#d7e0d8"/><path d="M0 84c28 5 61 113 135 128v56H0Z" fill="#edf0df"/><path d="m78 34 8 19 20 2-15 14 5 20-18-11-17 11 4-20-15-14 20-2Z" fill="#e7efdb"/><g font-family="Arial,sans-serif" font-weight="bold" font-style="italic"><text x="67" y="139" text-anchor="middle" fill="#f4f3e6" font-size="29" transform="rotate(-14 67 139)">Chilsung</text><text x="76" y="191" text-anchor="middle" fill="#0b624b" font-size="35" transform="rotate(-14 76 191)">Cider</text></g><text x="92" y="241" text-anchor="middle" font-family="Arial,sans-serif" fill="#1a6f54" font-size="13" font-weight="bold">190 mL</text></g>
+  <path d="M360 276c-48-7-84 39-87 89-5 55 22 89 64 89 53 0 94-33 97-75 4-49-31-96-74-103Z" fill="url(#egg)" stroke="#7f492e" stroke-width="2"/>
+  <path d="M226 309c-48-1-85 50-89 94-5 48 28 74 70 73 52-1 91-34 87-75-5-49-30-90-68-92Z" fill="url(#egg)" stroke="#7f492e" stroke-width="2"/>
+  <ellipse cx="205" cy="352" rx="26" ry="10" fill="#f2c796" opacity=".12" transform="rotate(-32 205 352)"/>
+  <ellipse cx="342" cy="316" rx="26" ry="10" fill="#f2c796" opacity=".1" transform="rotate(-32 342 316)"/>
+</svg>

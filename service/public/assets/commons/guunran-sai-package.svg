@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="448" viewBox="0 0 512 448">
+  <!-- Game-native interpretation of the Storyway 2024 launch package. -->
+  <defs><filter id="paper"><feTurbulence type="fractalNoise" baseFrequency=".32" numOctaves="3" seed="7"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".07"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter></defs>
+  <rect x="5" y="5" width="502" height="438" rx="24" fill="#dce4de" stroke="#c5ceca" stroke-width="9"/>
+  <rect x="16" y="14" width="480" height="420" rx="10" fill="#ddccad" filter="url(#paper)"/>
+  <g font-family="Apple SD Gothic Neo,Noto Sans KR,Arial,sans-serif">
+    <rect x="31" y="31" width="51" height="60" rx="3" fill="#bc6145"/>
+    <path d="M67 42c-15-9-28 2-26 16 2 12 18 11 18 20 10-6 17-23 8-36Z" fill="#f6ebd8"/>
+    <text x="55" y="70" text-anchor="middle" font-family="Georgia,serif" font-size="27" font-weight="bold" fill="#bc6145">S</text>
+    <text x="463" y="54" text-anchor="end" font-size="25" font-weight="800" fill="#b6634d">Storyway</text>
+    <path d="M332 38q8 11 16 0" fill="none" stroke="#b6634d" stroke-width="3"/>
+    <text x="279" y="129" text-anchor="middle" font-size="17" letter-spacing="2" fill="#554834">기억나는 우리의 추억</text>
+    <path d="M130 137h319" stroke="#8c7857" stroke-width="1"/>
+    <g fill="none" stroke="#7c7059" stroke-width="2" opacity=".65"><path d="M48 149c-26 1-32 35-23 48 9 16 28 17 39 3 10-14 2-49-16-51Z"/><path d="M76 200c-24 2-28 38-17 50 13 15 33 7 37-8 4-15-3-41-20-42Z"/></g>
+    <text x="118" y="205" font-size="59" font-weight="900" letter-spacing="-2" fill="#4d2b21">구운란</text>
+    <text x="297" y="205" font-size="59" font-weight="900" letter-spacing="-2" fill="#b2762f">사이</text>
+    <text x="266" y="247" text-anchor="middle" font-size="15" font-weight="700" fill="#433c2c">구운계란 2개 · 칠성사이다 190mL</text>
+    <text x="266" y="269" text-anchor="middle" font-size="14" fill="#554b38">기차여행의 작은 간식</text>
+    <g transform="translate(399 301) rotate(-34)"><rect x="-40" y="-44" width="78" height="112" rx="13" fill="#aaa89b"/><ellipse cy="-42" rx="39" ry="9" fill="#d6d1be"/><text y="13" text-anchor="middle" fill="#f1e7ce" font-size="28" font-weight="900">사이다</text><path d="m0-69 4 10 11 1-8 7 2 11-9-6-9 6 2-11-8-7 11-1Z" fill="#aaa89b"/></g>
+    <circle cx="53" cy="332" r="20" fill="none" stroke="#63999b" stroke-width="2"/><text x="53" y="329" text-anchor="middle" font-size="8" fill="#568a91">안전관리인증</text><text x="53" y="342" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="10" fill="#568a91">HACCP</text>
+    <text x="32" y="378" font-size="11" fill="#4f4835">구운계란 70g (35g × 2개)</text>
+    <path d="M31 393h449v27H31Z" fill="none" stroke="#8d7d61"/>
+    <text x="46" y="412" font-size="12" fill="#635740">소비기한</text><text x="464" y="412" text-anchor="end" font-size="12" fill="#635740">까지</text>
+  </g>
+</svg>

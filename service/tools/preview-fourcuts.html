@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>서울 네컷 미니앱 · 검증</title>
+<link rel="stylesheet" href="/src/commons.css">
+<style>
+ body{display:grid;place-items:center;background:#e6ece3;min-height:100dvh;color:#254c41;font-family:system-ui}
+ main{padding:32px;max-width:600px}main button,main select{padding:12px;margin:8px;border-radius:8px}
+ main label{display:block;margin:16px 0}
+</style>
+<main>
+ <h1>서울 네컷 미니앱</h1>
+ <p>실제 게임의 촬영 모듈을 사용합니다. 가상 카메라는 선택한 합성 테스트 사진을 움직이는 영상으로 공급합니다.</p>
+ <label>가상 카메라 테스트 사진 <input id="camera-fixture" type="file" accept="image/png,image/jpeg,image/webp"></label>
+ <select id="character" aria-label="검증 캐릭터">
+  <option value="adult-woman">여성 여행자</option>
+  <option value="child-boy">꼬마 소년</option>
+  <option value="elder-man">할아버지</option>
+ </select>
+ <button id="open">네컷사진 찍기</button>
+ <p id="result" role="status">촬영 전</p>
+ <p id="camera-result" role="status">가상 카메라 꺼짐</p>
+</main>
+<script type="module">
+ import {createFourcutMiniApp} from '/src/commons-fourcut-miniapp.js';
+ const $=id=>document.getElementById(id);
+ async function openSyntheticCamera(){
+  const file=$('camera-fixture').files[0];
+  if(!file)throw Error('가상 카메라 테스트 사진을 먼저 골라 주세요.');
+  const image=await createImageBitmap(file);
+  const feed=document.createElement('canvas');
+  feed.width=960;
+  feed.height=720;
+  const context=feed.getContext('2d');
+  const stream=feed.captureStream(15),track=stream.getVideoTracks()[0];
+  const start=performance.now();
+  function draw(now){
+   if(track.readyState==='ended'){
+    image.close();
+    $('camera-result').textContent='가상 카메라 꺼짐';
+    return;
+   }
+   const seconds=(now-start)/1000;
+   const scale=(.94+.05*Math.sin(seconds*1.5))*Math.min(feed.width/image.width,feed.height/image.height);
+   const width=image.width*scale,height=image.height*scale;
+   context.fillStyle='#a3499b';
+   context.fillRect(0,0,feed.width,feed.height);
+   context.drawImage(image,(feed.width-width)/2+24*Math.sin(seconds*2),feed.height-height,width,height);
+   context.fillStyle='#ffca43';
+   context.fillRect(20,20,110,50);
+   context.fillStyle='#1d233a';
+   context.font='22px sans-serif';
+   context.fillText('RAW',38,53);
+   requestAnimationFrame(draw);
+  }
+  $('camera-result').textContent='가상 카메라 켜짐';
+  draw(start);
+  return stream;
+ }
+ const app=createFourcutMiniApp({
+  getAvatar:()=>({character:$('character').value,heldItem:'rail-block'}),
+  openCamera:openSyntheticCamera,
+  onAward:async(_,frames)=>{$('result').textContent=frames+'회 촬영 완료 · 테스트 보상';},
+ });
+ $('open').onclick=()=>app.open({id:'fourcuts',name:'서울 네컷',frames:4},{});
+ window.addEventListener('pagehide',()=>app.dispose(),{once:true});
+</script>
+</html>

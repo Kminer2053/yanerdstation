@@ -1,0 +1,21 @@
+.walking-prompt{position:absolute;left:50%;bottom:97px;transform:translateX(-50%);z-index:5;display:flex;align-items:center;gap:14px;max-width:calc(100% - 40px);padding:11px 14px;border:1px solid #fff;border-radius:15px;background:#204a3fed;color:#fff;box-shadow:0 8px 28px #193e3426;font-size:11px;line-height:1.6;backdrop-filter:blur(10px)}.walking-prompt button{flex:none;font-size:10px;min-height:35px;padding:7px 11px;background:#f7f5ed;color:#193e34}.toolbar #front-view[aria-pressed=true]{background:#dce9d2;border-color:#76936a}.walking-prompt:has(+*){pointer-events:auto}@media(max-width:650px){.walking-prompt{bottom:211px;width:calc(100% - 28px);max-width:none;padding:10px 12px;gap:10px;font-size:10px}.walking-prompt span{flex:1}.walking-prompt button{font-size:10px;padding:7px 9px;min-height:36px}}
+.destination-mode {
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ gap:12px;
+ margin:10px 0;
+ font-size:13px;
+ font-weight:600;
+}
+.destination-mode select {
+ min-height:40px;
+ min-width:118px;
+ max-width:65%;
+ padding:6px 10px;
+ border:1px solid #76936a;
+ border-radius:8px;
+ background:#f7f5ed;
+ color:#193e34;
+ font:inherit;
+}

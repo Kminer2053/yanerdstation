@@ -1,0 +1,19 @@
+{
+  "source": "https://toolkit.yanerdstation.kr/api/public/station?key=S202103",
+  "approvedImage": "/assets/commons/ai-station-agent-approved-front.png",
+  "asset": {
+    "id": "structure-25ce5e10-3103-49eb-a77e-e9905e9931c4",
+    "proposal": "25ce5e10-3103-49eb-a77e-e9905e9931c4",
+    "name": "AI 역무원 키오스크",
+    "floor": "2F",
+    "position": [126.97105440410593, 37.55410605827187, 36.19],
+    "size": [1.45, 0.4, 2.45],
+    "heading": 338.7352339723743,
+    "color": "#FFFFFF",
+    "dimension_basis": "estimated",
+    "hidden": false,
+    "facades": {
+      "front": "/api/public/proposal-images/25ce5e10-3103-49eb-a77e-e9905e9931c4"
+    }
+  }
+}
