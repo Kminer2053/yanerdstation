@@ -11,3 +11,22 @@
 - 정적 지도 자료와 승인된 파사드는 로컬에서 같은 흐름을 실행할 수 있도록 포함합니다. 이미지 두 장의 위치·편집 메타데이터를 제거했습니다. 가공 매출과 모형이 추정한 유동 수치의 출처는 [유동인구 파이프라인](../service/docs/footfall-data-pipeline.md)을 참조하세요.
 - 제보·승인 연습은 로컬 SQLite와 임시 승인자로 실행합니다. 시연영상은 소스 검토와 별개로 바로 볼 수 있도록 경량 MP4로 제공합니다.
 - 의존성은 공개본 설치 시 알려진 보안 패치가 적용되도록 Vite, sharp, source-map-js, Drizzle 도구의 하위 esbuild 버전을 조정했습니다.
+
+## 두 원격에 변경 반영
+
+GitHub의 `main`을 통합 기준으로 사용합니다. 첫 설정에서 공공 GitLab 원격을 추가합니다.
+
+```bash
+git remote add public-gitlab https://gitlab.aigov.go.kr/Kminer2053/yanerdstation.git
+```
+
+검토와 테스트를 마친 변경이 로컬 `main`에 들어오면 같은 브랜치를 두 곳에 푸시합니다.
+
+```bash
+git push origin main
+git push public-gitlab main
+git ls-remote --exit-code origin refs/heads/main
+git ls-remote --exit-code public-gitlab refs/heads/main
+```
+
+두 조회 결과의 첫 열이 일치하면 같은 커밋이 공개된 상태입니다. 한쪽 푸시가 실패하면 해당 오류를 해결한 뒤 그 원격에 다시 푸시합니다. 두 원격의 파일을 각각 웹에서 수정하면 이력이 갈라질 수 있으므로 변경은 통합 `main`에서 관리합니다.

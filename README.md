@@ -108,6 +108,10 @@ npm run build
 
 빌드 결과는 각 앱의 `dist/client/`와 `dist/server/index.js`에 생깁니다. 앱별 운영 조건과 추가 검사는 [서비스 운영 문서](./service/docs/PROJECT_OPERATIONS.md)와 [편집기 문서](./toolkit/README.md)에 있습니다.
 
+## 변경 반영
+
+검증한 `main` 커밋은 GitHub와 공공 GitLab에 함께 올립니다. [두 원격 설정과 커밋 확인](./docs/source-baseline.md#두-원격에-변경-반영)
+
 ## 자료의 범위와 이용 조건
 
 - 공간의 바탕은 브이월드 실내 3D 지도입니다. 정밀 뷰어는 타일을 읽어 오고, COMMONS는 서울역 2·3층의 경량 파생 자산을 사용합니다.
